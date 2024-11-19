@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Plant Disease Detection</title>
 </head>
 <body>
-    <div class="container">
-        <h1>TO-DO LIST</h1>
-        <input type="text"  placeholder="Add a new task" id="taskInput">
-        <button id="addTaskBtn">Add Task</button>
-        <ul id="taskList"></ul>
-    </div>
-    <script src="script.js"></script>
+    <main>
+        <div class="full-screen-image">
+            <header class="site-header">
+                <h1>PlantPulse</h1>
+                <h2>Your Digital Companion for Plant Health</h2>
+            </header>
+            <div class="container">
+                <div class="about-section">
+                    <h2>Welcome to PlantPulse, your trusted resource for safeguarding plant health!</h2>
+                    <p>
+                        In a world where plants play a vital role in our ecosystem, their well-being is more important than ever. Our website is dedicated to helping gardeners, farmers, and plant lovers identify and manage plant diseases effectively and efficiently.
+                    </p>
+                </div>
+                <div class="upload-section">
+                    <h2>Upload Your Plant Image</h2>
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <input type="file" id="image-upload" accept="image/*" required>
+                        <button type="submit">Detect Disease</button>
+                    </form>
+                </div>
+                <div class="result-section" id="result-section">
+                    <h2>Detection Result</h2>
+                    <div class="result-content" id="result-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
+
 
